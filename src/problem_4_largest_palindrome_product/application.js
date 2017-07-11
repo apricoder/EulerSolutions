@@ -1,5 +1,18 @@
-const findLargestPalindromeProductOfNumbersWithLength = (length) => {
+const range = require('../commons/range');
+const strings = require('../commons/strings');
+const _ = require('lodash');
 
+const findLargestPalindromeProductOfNumbersWithLength = (length) => {
+  const min = findSmallestNumberWithLength(length);
+  const max = findLargestNumberWithLength(length);
+  const _range = range(min, max);
+
+  const palindromes = [];
+  for (let i = _range.length - 1; i--;) {
+    for (let j = i; j--;) {
+
+    }
+  }
 };
 
 const findLargestNumberWithLength = (length) => {
@@ -13,8 +26,15 @@ const findSmallestNumberWithLength = (length) => {
   else throw new Error(`Invalid number length:`, length);
 };
 
+const isPalindrome = (number) => {
+  const numberString = number.toString();
+  const reversedNumberString = strings.reverse(numberString);
+  return numberString === reversedNumberString;
+};
+
 module.exports = {
   findLargestPalindromeProductOfNumbersWithLength,
   findLargestNumberWithLength,
-  findSmallestNumberWithLength
+  findSmallestNumberWithLength,
+  isPalindrome
 };

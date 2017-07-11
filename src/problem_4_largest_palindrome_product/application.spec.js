@@ -22,6 +22,13 @@ describe('problem 4: largest palindrome product', () => {
     console.log('Largest palindrome product of two 3 digit numbers is', largestPalindrome);  // 6857
   });
 
+  it('checks if sample palindromes are correctly recognized', () => {
+    const samplePalindromes = [1001, 9009, 1881, 101, 9, 66066, 13231, 8008];
+    samplePalindromes.forEach(samplePalindrome => {
+      expect(application.isPalindrome(samplePalindrome)).to.be.true;
+    });
+  });
+
   describe('finding edge numbers with given length', () => {
 
     it('finds largest 2 digit number', () => {
