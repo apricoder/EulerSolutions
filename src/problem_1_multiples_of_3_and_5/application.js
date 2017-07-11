@@ -1,4 +1,4 @@
-const range = require('../common/range');
+const range = require('../commons/range');
 
 const countMultiplesSum = (max, numbers) => {
   return numbers

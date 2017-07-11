@@ -1,7 +1,7 @@
 const application = require('./application');
 const expect = require('chai').expect;
 
-describe('application', () => {
+describe('problem 1: multiples of 3 and 5', () => {
 
   it('sums multiples of 3 below 10', () => {
     const numbers = [3];

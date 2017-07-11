@@ -1,7 +1,7 @@
 const application = require('./application');
 const expect = require('chai').expect;
 
-describe('application', () => {
+describe('problem 3: largest prime factor', () => {
 
   it('finds largest prime factor of 133', () => {
     expect(application.findLargestPrimeFactor(133)).to.equal(19);

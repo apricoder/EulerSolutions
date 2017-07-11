@@ -1,7 +1,7 @@
 const application = require('./application');
 const expect = require('chai').expect;
 
-describe('application', () => {
+describe('problem 2: even fibonacci numbers', () => {
 
   it('gets even fibonacci numbers sum below 5', () => {
     expect(application.evenFibonacciNumbersSumBelow(3)).to.equal(2);

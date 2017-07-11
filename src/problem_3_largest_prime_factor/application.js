@@ -1,4 +1,4 @@
-let range = require('./../common/range');
+const range = require('../commons/range');
 
 const findLargestPrimeFactor = (number) => {
   const maxFactor = Math.sqrt(number);
@@ -19,7 +19,7 @@ const findLargestPrimeFactor = (number) => {
 
 const divisionWithoutRemainder = (number, divider) => number % divider === 0;
 
-const isPrime = (largestFactor) => findLargestPrimeFactor(largestFactor) === 1;
+const isPrime = (number) => findLargestPrimeFactor(number) === 1;
 
 module.exports = {
   findLargestPrimeFactor

@@ -1,7 +1,7 @@
 const range = require('./range');
 const expect = require('chai').expect;
 
-describe('range', () => {
+describe('commons: range', () => {
 
   it('returns a range of numbers between bounds', () => {
     const _range = range(0, 5);
