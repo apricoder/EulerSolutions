@@ -7,19 +7,20 @@ describe('problem 4: largest palindrome product', () => {
 
   let largestPalindrome;
 
-  xit('finds largest palindrome product of 1 digit numbers', () => {
+  it('finds largest palindrome product of 1 digit numbers', () => {
     largestPalindrome = application.findLargestPalindromeProductOfNumbersWithLength(1);
     expect(largestPalindrome).to.equal(9);
   });
 
-  xit('finds largest palindrome product of 2 digit numbers', () => {
+  it('finds largest palindrome product of 2 digit numbers', () => {
     largestPalindrome = application.findLargestPalindromeProductOfNumbersWithLength(2);
     expect(largestPalindrome).to.equal(9009);
   });
 
-  xit('finds largest palindrome product of 3 digit numbers', () => {
+  it('finds largest palindrome product of 3 digit numbers', () => {
     largestPalindrome = application.findLargestPalindromeProductOfNumbersWithLength(3);
-    console.log('Largest palindrome product of two 3 digit numbers is', largestPalindrome);  // 6857
+    console.log('Largest palindrome product of two 3 digit numbers is', largestPalindrome);
+    expect(largestPalindrome).to.equal(906609);
   });
 
   it('checks if sample palindromes are correctly recognized', () => {
