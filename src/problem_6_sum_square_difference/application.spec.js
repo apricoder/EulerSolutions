@@ -29,4 +29,8 @@ describe('problem 6: sum square difference', () => {
     expect(delta).to.equal(25164150);
   });
 
+  it('currently supports only ranges with even count of numbers', () => {
+    expect(() => application.calculateSquareDifference(1, 5)).to.throw(Error);
+  });
+
 });
