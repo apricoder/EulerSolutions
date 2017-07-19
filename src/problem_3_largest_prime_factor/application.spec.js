@@ -11,10 +11,10 @@ describe('problem 3: largest prime factor', () => {
     expect(application.findLargestPrimeFactor(7791)).to.equal(53);
   });
 
-  it('prints largest prime factor of 600851475143', () => {
-    console.log("Largest prime factor of 600851475143 is "
-      + application.findLargestPrimeFactor(600851475143) // 6857
-    );
+  xit('prints largest prime factor of 600851475143', () => {
+    const primeFactor = application.findLargestPrimeFactor(600851475143);
+    console.log('Largest prime factor of 600851475143 is ', primeFactor);
+    expect(primeFactor).to.equal(6857);
   });
 
 });

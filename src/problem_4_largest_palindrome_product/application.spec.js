@@ -17,7 +17,7 @@ describe('problem 4: largest palindrome product', () => {
     expect(largestPalindrome).to.equal(9009);
   });
 
-  it('finds largest palindrome product of 3 digit numbers', () => {
+  xit('finds largest palindrome product of 3 digit numbers', () => {
     largestPalindrome = application.findLargestPalindromeProductOfNumbersWithLength(3);
     console.log('Largest palindrome product of two 3 digit numbers is', largestPalindrome);
     expect(largestPalindrome).to.equal(906609);
