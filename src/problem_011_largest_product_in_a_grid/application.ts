@@ -25,15 +25,23 @@ export class Grid extends Array<Array<number>> {
   }
 
   leftDiagonals() {
-    const halfTriangle = this.leftTriangle();
-    const reversed = new Grid(...this.slice().reverse().map(line => line.slice().reverse()));
-    const rightTriangle = reversed.leftTriangle().slice(0, -1).reverse().map(line => line.slice().reverse());
-    return halfTriangle.concat(rightTriangle);
+    const leftTriangle = this.leftTriangle();
+    const complementTriangle = Grid.reverseGrid(this).leftTriangle().slice(0, -1);
+    const rightTriangle = Grid.reverseGrid(complementTriangle);
+    return leftTriangle.concat(rightTriangle);
   }
 
   rightDiagonals() {
-    const reversedRows = new Grid(...this.map(line => line.reverse()));
+    const reversedRows = new Grid(...this.map(line => line.slice().reverse()));
     return reversedRows.leftDiagonals();
+  }
+
+  private static reverseCopy<T>(array: Array<T>) {
+    return array.slice().reverse();
+  }
+
+  private static reverseGrid(grid: Grid | Array<Array<number>>): Grid {
+    return new Grid(...Grid.reverseCopy(grid).map(Grid.reverseCopy));
   }
 
   private leftTriangle() {
