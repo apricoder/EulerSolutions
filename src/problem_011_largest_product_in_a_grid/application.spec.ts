@@ -94,10 +94,34 @@ describe('problems 11: finding largest product in a grid', () => {
   it('gets left diagonals of grid - lines perpendicular' +
     ' to diagonal from upper left to bottom right corner of grid', () => {
     const diagonals = grid.leftDiagonals();
+
+    // checking only 4 first diagonals
+    expect(diagonals[0]).to.deep.equal([8]);
+    expect(diagonals[1]).to.deep.equal([2, 49]);
+    expect(diagonals[2]).to.deep.equal([22, 49, 81]);
+    expect(diagonals[3]).to.deep.equal([97, 99, 49, 52]);
+
+    // and 4 last diagonals
+    expect(diagonals[35]).to.deep.equal([36, 36, 57, 89]);
+    expect(diagonals[36]).to.deep.equal([16, 5, 19]);
+    expect(diagonals[37]).to.deep.equal([54, 67]);
+    expect(diagonals[38]).to.deep.equal([48]);
   });
 
   it('gets right diagonals as left diagonals of grid with reversed rows', () => {
     const diagonals = grid.rightDiagonals();
+
+    // checking only 4 first diagonals
+    expect(diagonals[0]).to.deep.equal([8]);
+    expect(diagonals[1]).to.deep.equal([91, 0]);
+    expect(diagonals[2]).to.deep.equal([77, 62, 65]);
+    expect(diagonals[3]).to.deep.equal([50, 56, 36, 91]);
+
+    // and 4 last diagonals
+    expect(diagonals[35]).to.deep.equal([4, 69, 35, 71]);
+    expect(diagonals[36]).to.deep.equal([20, 73, 54]);
+    expect(diagonals[37]).to.deep.equal([20, 70]);
+    expect(diagonals[38]).to.deep.equal([1]);
   });
 
 });

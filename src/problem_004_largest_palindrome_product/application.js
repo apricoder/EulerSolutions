@@ -1,6 +1,5 @@
 const range = require('../commons/range');
 const strings = require('../commons/strings');
-const _ = require('lodash');
 
 const findLargestPalindromeProductOfNumbersWithLength = (length) => {
   const min = findSmallestNumberWithLength(length);
