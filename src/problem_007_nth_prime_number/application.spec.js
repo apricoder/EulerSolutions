@@ -3,7 +3,7 @@
 const application = require('./application');
 const expect = require('chai').expect;
 
-describe('problems 7: finding prime numbers', () => {
+describe('problem 7: finding prime numbers', () => {
 
   it('finds 1 prime number', () => {
     const prime = application.primeNumberWithIndex(0);
