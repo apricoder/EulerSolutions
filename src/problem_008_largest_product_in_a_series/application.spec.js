@@ -7,7 +7,7 @@
 const application = require('./application.optimized');
 const expect = require('chai').expect;
 
-describe('problems 8: finding largest product in a series', () => {
+describe('problem 8: finding largest product in a series', () => {
 
   const thousandDigitNumber =
     '73167176531330624919225119674426574742355349194934' +

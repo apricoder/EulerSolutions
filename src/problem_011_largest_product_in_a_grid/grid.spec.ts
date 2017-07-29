@@ -1,7 +1,7 @@
 import {expect} from 'chai';
-import {Grid} from "./application";
+import {Grid} from "./grid";
 
-describe('problems 11: finding largest product in a grid', () => {
+describe('problem 11: grid', () => {
 
   const rawGrid =
     `08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
