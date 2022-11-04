@@ -7,7 +7,7 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.17",
     "chai": "^3.5.0",
-    "mocha": "^3.3.0",
+    "mocha": "^10.1.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.4.2"
   },
