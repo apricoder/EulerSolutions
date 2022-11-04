@@ -85,6 +85,7 @@ describe(`roman / decimal converter`, () => {
       expect(fromDecimal(3449)).to.eq('MMMCDXLIX');
       expect(fromDecimal(1996)).to.eq('MCMXCVI');
       expect(fromDecimal(1848)).to.eq('MDCCCXLVIII');
+      expect(fromDecimal(1404)).to.eq('MCDIV');
     });
 
   });
