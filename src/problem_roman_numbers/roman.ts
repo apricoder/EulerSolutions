@@ -124,10 +124,10 @@ const fromDecimalTail = (decimalStr: string, accRomanNumber: string): string => 
   return fromDecimalTail(remainingDecimal, `${accComplexRoman}${accRomanNumber}`);
 };
 
-export const fromDecimal = (decimal: number): string => {
-  return fromDecimalTail(`${decimal}`, ``);
-}
-
 export const fromRoman = (romanNumber: string): number => {
   return fromRomanTail(romanNumber);
 };
+
+export const fromDecimal = (decimal: number): string => {
+  return fromDecimalTail(`${decimal}`, ``);
+}
