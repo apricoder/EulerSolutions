@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/chai": "^4.0.1",
-    "@types/lodash": "^4.14.71",
+    "@types/lodash": "^4.14.188",
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.17",
     "chai": "^3.5.0",
@@ -12,6 +12,6 @@
     "typescript": "^2.4.2"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.21"
   }
 }
