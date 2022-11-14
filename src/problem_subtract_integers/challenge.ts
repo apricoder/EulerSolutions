@@ -1,11 +1,11 @@
 import * as _ from "lodash";
 
-const stripZeroPrefix = (reversed: string) => {
-  const prefixToCropLength: number = reversed.split('').findIndex(c => c !== '0');
+const stripZeroPrefix = (n: string) => {
+  const prefixToCropLength: number = n.split('').findIndex(c => c !== '0');
   if (prefixToCropLength < 0) {
     return '0';
   }
-  return reversed.substring(prefixToCropLength);
+  return n.substring(prefixToCropLength);
 };
 
 const reversedSubtractionArr = (acsStrs: string[], bcsStrs: string[]): string[] =>
