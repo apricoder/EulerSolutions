@@ -37,6 +37,21 @@ describe(`stock strategy`, () => {
       expect(maxProfit).to.equal(121);
     });
 
+    it(`should sell on the last day if prices are just rising [1, 2, 3, 4, 5, 6, 7, 8, 9]`, () => {
+      const prices = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      const maxProfit = calculateMaxProfit(prices);
+      expect(maxProfit).to.equal(36);
+    });
+
+    it(`should not buy if prices are just falling [9, 8, 7, 6, 5, 4, 3, 2, 1]`, () => {
+      const prices = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+      const maxProfit = calculateMaxProfit(prices);
+      expect(maxProfit).to.equal(0);
+    });
+
+
   });
 
 });
